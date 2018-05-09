@@ -24,7 +24,8 @@ class TaskApi(Resource):
         task.id = job.get_id()
         task.save_task()
         task_dict = task.to_dict()
-        return task_dict
+
+        return jsonify(task_dict)
 
 
 task_api.add_resource(TaskApi, '/tasks/', '/tasks/<string:task_id>/')
