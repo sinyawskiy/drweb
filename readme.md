@@ -30,8 +30,9 @@ REST API DESCRIPTION:
 
 ADD TASK
 
-POST: http://0.0.0.0:8080/api/tasks/
+POST: `http://0.0.0.0:8080/api/tasks/`
 
+```
 {
     "process": "-",
     "exec_time": "-",
@@ -40,11 +41,13 @@ POST: http://0.0.0.0:8080/api/tasks/
     "create_time": "2018.05.09 16:30:16.537410",
     "status": "In Queue"
 }
+```
 
 GET LIST
 
-GET: http://0.0.0.0:8080/api/tasks/
+GET: `http://0.0.0.0:8080/api/tasks/`
 
+```
 [
     {
         "create_time": "2018.05.09 16:19:21.000000",
@@ -66,11 +69,13 @@ GET: http://0.0.0.0:8080/api/tasks/
  ...
 
 ]
+```
 
 GET ITEM
 
-GET: http://0.0.0.0:8080/api/tasks/3fe52d63-d9fc-42f7-8424-f9b755159921/
+GET: `http://0.0.0.0:8080/api/tasks/3fe52d63-d9fc-42f7-8424-f9b755159921/`
 
+```
 [
     {
         "create_time": "2018.05.09 16:30:16.537410",
@@ -81,3 +86,4 @@ GET: http://0.0.0.0:8080/api/tasks/3fe52d63-d9fc-42f7-8424-f9b755159921/
         "task_id": "3fe52d63-d9fc-42f7-8424-f9b755159921"
     }
 ]
+```
